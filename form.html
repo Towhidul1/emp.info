@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/profile.png" type="image/png">
+</head>
+<body>
+    <div class="head">
+        <h1>Information Manager</h1>
+        <p>Store Your Employee's Information</p>
+    </div>
+    <div class="form-1">
+        <form id="myform">
+            <label for="name">Full Name: <input type="text" id="name" name="name" placeholder="Your Name" required></label>
+            <label for="contact">Contact Number: <input type="text" id="contact" name="contact" placeholder="Your Contact Number"></label>
+            <label for="ID">ID: <input type="text" id="ID" name="ID" placeholder="Your ID" required></label>
+            <label for="designation">Designation: 
+                <select name="designation" id="designation">
+                    <option value="Select">Select Your Designation</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Incharge">Incharge</option>
+                    <option value="VD Incharge">VD Incharge</option>
+                    <option value="VD Asst.">VD Asst.</option>
+                    <option value="Parcel Man">Parcel Man</option>
+                    <option value="Booking Asst.">Booking Asst.</option>
+                    <option value="Biker DM">Biker DM</option>
+                    <option value="Courier Man">Courier Man</option>
+                    <option value="Loader">Loader</option>
+                    <option value="Guard">Guard</option>
+                </select>
+            </label>
+            <label for="p.add">Present Address: <textarea id="p.add" name="p.add" placeholder="Present Address"></textarea></label>
+            <label for="Pm-address">Permanent Address: <textarea id="Pm-address" name="Pm-address" placeholder="Permanent Address"></textarea></label>
+            <label for="bg">Blood Group: <input type="text" id="bg" name="bg"></label>
+            <label for="joining-date">Joining Date: <input type="date" id="joining-date" name="joining-date" required></label>
+            <div id="btn">
+                <input id="submit" type="submit" value="Add Employee">
+                <input id="reset" type="reset" value="Reset">
+                <a id="back" href="index.html">Go Back</a>
+                <a id="view" href="list.html">View List</a>
+            </div>
+        </form>
+    </div>
+    <div class="tag">
+        <h3 class="dev-tag">Developed By <a class="dev-tag" target="_blank" href="https://www.facebook.com/Towhidul.islam.Rony.1.0?mibextid=ZbWKwL">Towhidul Islam Rony </a></h3>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

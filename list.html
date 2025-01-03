@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/team.png" type="image/x-icon">
+</head>
+<body>
+    <div class="head">
+        <h1>Employee List</h1>
+        <p>View and manage your employee information</p>
+    </div>
+    <div class="controls">
+        <input type="text" id="searchBar" placeholder="Search by name or ID">
+        <select id="filterDesignation">
+          <option value="">All</option>
+          <option value="Manager">Manager</option>
+          <option value="Incharge">Incharge</option>
+          <option value="VD Incharge">VD Incharge</option>
+          <option value="VD Asst.">VD Asst.</option>
+          <option value="Parcel Man">Parcel Man</option>
+          <option value="Booking Asst.">Booking Asst.</option>
+          <option value="Biker DM">Biker DM</option>
+          <option value="Courier Man">Courier Man</option>
+          <option value="Loader">Loader</option>
+          <option value="Guard">Guard</option>
+      </select>
+      <button id="clearFilter">Clear Filter</button>
+      
+        <button id="printButton">Print</button>
+        
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Designation</th>
+                <th>Present Address</th>
+                <th>Permanent Address</th>
+                <th>Blood Group</th>
+                <th>Joining Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employeeList"></tbody>
+    </table>
+    <div id="form-buttons">
+      <a href="form.html" id="addMoreButton">Add Employee</a>
+      <a id="backToHome" href="index.html">Home</a>
+  </div>
+  <div class="tag">
+    <h3 class="dev-tag">Developed By <a class="dev-tag" target="_blank" href="https://www.facebook.com/Towhidul.islam.Rony.1.0?mibextid=ZbWKwL">Towhidul Islam Rony </a></h3>
+</div>
+    <script src="list.js"></script>
+</body>
+</html>
